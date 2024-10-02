@@ -132,8 +132,8 @@ img {
   padding: 24px 0;
 }
 
-.menu-list-item li:hover a,
-.menu-list-item li:focus a {
+.menu-list li:hover a,
+.menu-list li:focus a {
   color: var(--ocean);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -150,14 +150,14 @@ img {
 }
 
 .menu-list li:hover::after a {
-background-color: #404bbf;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-transition-property: color;
+ background-color: #404bbf;
+ transition-duration: 250ms;
+ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+ transition-property: color;
 }
 
 .active {
-  position: relative;
+ position: relative;
 }
 
 .active::after {
@@ -192,20 +192,14 @@ menu-list-item:hover::after {
   gap: 40px;
 }
 
-.address-menu li a {
+.address-menu a {
   text-decoration: none;
   list-style-type: none;
   font-style: normal;
   color: #434455;
 }
 
-.address-menu li a:hover {
-  color: var(--ocean);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: color;
-}
-
+.address-menu li a:hover,
 .address-menu li a:focus {
   color: var(--ocean);
   transition-duration: 250ms;
