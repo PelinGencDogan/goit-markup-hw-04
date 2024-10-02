@@ -60,17 +60,19 @@ img {
   display: block;
 }
 
-.header {
-  height: 72px;
-  border-bottom: 1px solid #e7e9fc;
-}
-
 .container {
   width: 1158px;
   max-width: 1440px;
   align-items: center;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+/* **************************HEADER************************** */
+
+.header {
+  height: 72px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container-header {
@@ -214,11 +216,26 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
+/* **************************HEADER**********SON**************** */
 
 section {
   padding: 120px 0;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* **************************ORDER SERVICE************************** */
 .order-service {
   max-width: 1440px;
   text-align: center;
@@ -276,31 +293,20 @@ section {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
 }
+/* **************************ORDER SERVICE**************SON************ */
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.section-one-list {
+/* **************************VISION************************** */
+.vision-list {
   display: flex;
   gap: 24px;
 }
 
-.section-one-list-item {
+.vision-list-item {
   list-style-type: none;
   width: calc((100% - 72px) / 4);
 }
 
-.section-one-icons {
+.vision-icons {
   width: 264px;
   height: 112px;
   border: 1px solid #8e8f99;
@@ -312,6 +318,14 @@ section {
   border-radius: 4px;
 }
 
+.vision ul li p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* **************************VISION**********SON **************** */
+
 .title-three {
   color: #2e2f42;
   font-weight: 500;
@@ -320,45 +334,8 @@ section {
   margin-bottom: 8px;
 }
 
-.vision ul li p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5em;
-}
-
-.section-two {
-  background: var(--cloud);
-}
-
-.section-two h2 {
-  color: #2e2f42;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 2.5em;
-  letter-spacing: 0.02em;
-  text-align: center;
-  margin-bottom: 72px;
-}
-
 .title-two {
   margin-bottom: 72px;
-}
-
-.section-two-list {
-  list-style-type: none;
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  text-align: center;
-}
-
-.section-two-list-item {
-  width: calc((100% - 72px) / 4);
-  list-style-type: none;
-  background-color: #ffffff;
-  border-radius: 0 0 4px 4px;
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .social-links {
@@ -398,7 +375,39 @@ section {
   transition-property: color;
 }
 
-.section-two img {
+/* **************************OUR TEAM************************** */
+.our-team {
+  background: var(--cloud);
+}
+
+.our-team h2 {
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2.5em;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.our-team-list {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+
+.our-team-list-item {
+  width: calc((100% - 72px) / 4);
+  list-style-type: none;
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.our-team img {
   width: 264px;
   height: 260px;
 }
@@ -422,6 +431,9 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* **************************OUR TEAM**********SON **************** */
+
+/* **************************OUR PORTFOLIO************************** */
 
 .our-portfolio h2 {
   color: #2e2f42;
@@ -430,10 +442,6 @@ section {
   line-height: 2.5em;
   letter-spacing: 0.02em;
   text-align: center;
-}
-
-.title-two {
-  margin-bottom: 72px;
 }
 
 .our-portfolio-list {
@@ -510,7 +518,9 @@ section {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+/* **************************OUR PORTFOLIO**********SON **************** */
 
+/* **************************FOOTER************************** */
 .footer {
   background-color: #2e2f42;
   color: #ffffff;
@@ -590,3 +600,4 @@ section {
   letter-spacing: 0.02em;
   max-width: 264px;
 }
+/* **************************FOOTER**********SON **************** */
