@@ -360,7 +360,7 @@ section {
   display: flex;
   list-style-type: none;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .social-links .link {
@@ -514,12 +514,10 @@ section {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
-
 }
 
 .social-links .footer-icon {
-  fill: #fff;
-    
+  fill: #fff;  
 }
 
 .social-links .link:hover .footer-icon {
@@ -527,7 +525,6 @@ section {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color;
-
 }
 
 .footer-logo {
